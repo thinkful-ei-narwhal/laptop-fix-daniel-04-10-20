@@ -8,6 +8,7 @@ export default function CartList(props) {
     <div>
       {Object.keys(props.selected).map((feature, i) => { 
         return <CartFeature 
+        key = {i}
         featureHash = {`${feature}-${i}`}
         selectedOption = {props.selected[feature]}
         selected={props.selected}/>})}

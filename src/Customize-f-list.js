@@ -13,6 +13,7 @@ export default function CustomizeFeatureList(props) {
       {props.features[props.feature].map(item => {
         const itemHash = slugify(JSON.stringify(item));
         return <CustomizeFeature 
+        key = {itemHash}
         onUpdate={props.onUpdate}
         itemHash = {itemHash}
         feature = {props.feature}

@@ -8,6 +8,7 @@ export default function CustomizeList(props) {
     <div>
       {Object.keys(props.features).map((feature, i) => { 
         return <CustomizeFeatureList 
+        key = {i}
         feature = {feature}
         featureHash = {`${feature}-${i}`}
         features={props.features}
