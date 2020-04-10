@@ -4,9 +4,6 @@ import CartFeature from './Feature-cart';
 
 export default function CartList(props) {
 
-  console.log(props);
-  
-
   return (
     <div>
       {Object.keys(props.selected).map((feature, i) => { 
