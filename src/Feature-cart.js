@@ -3,8 +3,7 @@ import './App.css';
 
 export default function CartFeature(props) {
 
-  // This object will allow us to
-// easily convert numbers into US dollar values
+  // need to move it and pass it along?
 const USCurrencyFormat = new Intl.NumberFormat('en-US', {
   style: 'currency',
   currency: 'USD'
